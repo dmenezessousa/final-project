@@ -1,0 +1,82 @@
+body{
+    background-color: #252525;
+    color: #fff;
+    margin: 0;
+    overflow-x: hidden;
+}
+nav{
+    font-size: 20px;
+}
+.btn-outline-success {
+    color: #f47521;
+    border-color: #f47521;
+}
+.btn-outline-success:hover{
+    color: #252525;
+    border-color: #f47521;
+    background-color: #f47521;
+}
+.navbar-brand{
+    color:#f47521 !important;
+}
+#carouselExampleIndicators{
+    height: 100%;
+    min-width: 20rem;
+}
+#carouselExampleIndicators > *{
+    box-sizing: border-box;
+}
+.w-100{
+    width:50% !important;
+    margin-left: 26%;
+}
+#search-bar{
+    display: flex;
+    justify-content: flex-end;
+}
+.category-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: stretch;
+}
+.card{
+    background-color: #252525;
+}
+.category-row > *{
+    flex-basis: 20rem;
+    flex-shrink: 0;
+}
+.category-row .card{
+    display: flex;
+    flex-direction: column;
+}
+.category-row .card > .card-content{
+    flex-grow: 1;
+}
+.category-row .card > img{
+    flex-basis: 25rem;
+    flex-shrink: 0;
+    overflow-y: hidden;
+    background-color: #252525;
+}
+.card-body{
+    background-color: #252525;
+}
+.btn-primary{
+    color: #252525;
+    background-color: #f47521;
+    border-color: #f47521;
+    font-weight: bold;
+}
+.btn-primary:hover{
+    color: #f47521;
+    background-color: #252525;
+    border-color: #f47521;
+    font-weight: bold;
+}
+.card-action{
+    display: flex;
+    justify-content: center;
+}
