@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime</title>
+    <!-- Libraries + CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
         <span class="navbar-brand">Anime</span>
@@ -29,6 +31,7 @@
             </li>
             </ul>
         </div>
+        <!-- Search input Element -->
         <div id=search-bar class="container-fluid">
             <form id=search-form class="d-flex">
             <input class="form-control me-2" name="search" type="search" id="search" placeholder="Search" aria-label="Search">
@@ -37,7 +40,7 @@
         </div>
         </div>
     </nav>
-
+    <!-- Carousel for Homepage -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -64,12 +67,13 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    
+    <!-- Div created to add cards from JS -->
     <div class="home-container"></div>
     
     <div id="search-results" class="container">
         
     </div>
+    <!-- Libraries + JS -->
 	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>	
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="main.js"></script>

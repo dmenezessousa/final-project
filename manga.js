@@ -1,3 +1,4 @@
+// The same javascript as my anime insted of requesting for anime its requesting for Mangas
 const mangaRequestURL = "https://api.jikan.moe/v3"
 const body = document.querySelector('body');
 const newDiv = document.querySelector('.home-container');
