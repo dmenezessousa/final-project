@@ -34,15 +34,10 @@ nav{
     display: flex;
     justify-content: flex-end;
 }
-.category-row{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    justify-content: stretch;
-}
+
 .card{
     background-color: #252525;
+    padding-bottom: 45px;
 }
 .category-row > *{
     flex-basis: 20rem;
@@ -56,7 +51,7 @@ nav{
     flex-grow: 1;
 }
 .category-row .card > img{
-    flex-basis: 25rem;
+    flex-basis: 30rem;
     flex-shrink: 0;
     overflow-y: hidden;
     background-color: #252525;
