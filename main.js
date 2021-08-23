@@ -1,4 +1,6 @@
 const animeRequestURL = "https://api.jikan.moe/v3"
+const body = document.querySelector('body');
+const newDiv = document.querySelector('.home-container');
 
 function searchAnime(e){
 
@@ -13,10 +15,10 @@ function searchAnime(e){
 };
 
 
-
 function updateDom(data){
 
     const searchResults = document.querySelector('#search-results');
+    let value = 0;
 
     const animeCategories = data.results
     .reduce((category, anime)=>{
@@ -34,7 +36,7 @@ function updateDom(data){
         .map(anime=>{
             return `
 
-                <div class="card">
+                <div class="card splide__slide">
                         <img src="${anime.image_url}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">${anime.title}</h5>
@@ -47,13 +49,34 @@ function updateDom(data){
                 `
         }).join("");
 
+        value += 1;
+
         return `
             <section>
                 <h3>${key.toUpperCase()}</h3>
-                <div class="category-row">${animeHTML}</div>
+                <div class="category-row">
+                <div id="section_slide_${value}" class="splide">
+            <div  class="splide__track">
+                <div class="splide__list">${animeHTML}</div>
+            </div>
+            </div>
+            </div>
             </section>
         `
+        
     }).join("");
+    for(i=0; i<value; i++){
+        let add = i + 1;
+        const targetId = '#section_slide_' + add;
+        new Splide( targetId, {
+            type   : 'loop',
+            perPage: 3,
+            perMove: 1,
+            }).mount();
+        console.log(i);
+
+    }
+    
 }
 
 
